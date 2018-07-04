@@ -3,7 +3,7 @@
 
 FROM centos:yum
 
-MAINTAINER lrtao2010@yeah.net
+MAINTAINER lrtao2010@163.com
 
 RUN yum clean all  && yum install -y gcc zlib zlib-devel openssl openssl-devel readline readline-devel bzip2 bzip2-devel \
                    && mkdir /usr/local/python2.7 \

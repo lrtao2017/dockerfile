@@ -3,7 +3,7 @@
 
 FROM centos:yum
 
-MAINTAINER lrtao2010@yeah.net
+MAINTAINER lrtao2010@163.com
 
 RUN yum clean all  && yum install -y gcc \
                    && mkdir /usr/local/perl
