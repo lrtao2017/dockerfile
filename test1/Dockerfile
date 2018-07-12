@@ -29,5 +29,7 @@ COPY pure_Ruijin3.pl /usr/local/GST_SNP_Predict/
 COPY SNP_Predict.py /usr/local/GST_SNP_Predict/
 COPY xgb_modify.model /usr/local/GST_SNP_Predict/
 
-#ENTRYPOINT ["python", "SNP_Predict.py"]
-CMD ["/bin/bash"]
+WORKDIR /usr/local/GST_SNP_Predict
+ENTRYPOINT ["python", "SNP_Predict.py"] #可以接收参数
+#docker run --name snp-test2 -v /snp1:/snp1 hdy:GST_SNP_Predict_v.2.0 /snp1/frshtraceKIT_11_f.poly /snp1/KIT_11_f.query.abl.dump /snp1/feature1.xlsqual /snp1/feature2.xls /snp1/result_prediction.xls
+#CMD ["/bin/bash"]
