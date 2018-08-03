@@ -3,7 +3,7 @@
 
 FROM centos:python3.6-perl
 
-MAINTAINER liuweijie@celloud.cn
+MAINTAINER lrtao2010
 
 RUN yum install lapack-devel blas-devel -y
 RUN pip install -U pip
